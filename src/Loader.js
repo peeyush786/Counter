@@ -2,19 +2,19 @@ import "./Loader.css";
 
 function Loader() {
   return (
-    <div class="circle">
-      <div class="circle1 child"></div>
-      <div class="circle2 child"></div>
-      <div class="circle3 child"></div>
-      <div class="circle4 child"></div>
-      <div class="circle5 child"></div>
-      <div class="circle6 child"></div>
-      <div class="circle7 child"></div>
-      <div class="circle8 child"></div>
-      <div class="circle9 child"></div>
-      <div class="circle10 child"></div>
-      <div class="circle11 child"></div>
-      <div class="circle12 child"></div>
+    <div className="circle">
+      <div className="circle1 child"></div>
+      <div className="circle2 child"></div>
+      <div className="circle3 child"></div>
+      <div className="circle4 child"></div>
+      <div className="circle5 child"></div>
+      <div className="circle6 child"></div>
+      <div className="circle7 child"></div>
+      <div className="circle8 child"></div>
+      <div className="circle9 child"></div>
+      <div className="circle10 child"></div>
+      <div className="circle11 child"></div>
+      <div className="circle12 child"></div>
     </div>
   );
 }

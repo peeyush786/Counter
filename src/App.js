@@ -17,15 +17,14 @@ function App() {
     setLoading(true);
 
     axios
-      .post(
+      .put(
         "https://interview-8e4c5-default-rtdb.firebaseio.com/front-end.json",
         {
-          7318019088: counter,
+          7318019088: +value,
         }
       )
       .then(function (response) {
         setLoading(false);
-        console.log(response);
       })
       .catch(function (error) {
         setLoading(false);
@@ -57,7 +56,7 @@ function App() {
         "size",
         (currentCounter - 1).toString().length
       );
-    setCounterValue(currentCounter - 1);
+    setCounterValue((currentCounter - 1).toString());
   };
 
   const onIncrement = () => {
@@ -69,7 +68,7 @@ function App() {
         "size",
         (currentCounter + 1).toString().length
       );
-    setCounterValue(currentCounter + 1);
+    setCounterValue((currentCounter + 1).toString());
   };
 
   useEffect(() => {
@@ -107,7 +106,7 @@ function App() {
               ref={inputRef}
               value={counter}
               onChange={onInputChange}
-              size="1"
+              size={counter.toString().length}
             />
           </div>
           <div className="plus" onClick={onIncrement}>
